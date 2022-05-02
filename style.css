@@ -3,3 +3,27 @@ body {
     color: aliceblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+
+div#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border-top: white;
+    border-top-style: solid;
+    margin-top: 50%;
+    margin-bottom: 5px;
+    margin-left: 0%;
+    background-color: grey;
+    width: 100%;
+}
+#footer .logo-box {
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+#footer img {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+}
