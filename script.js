@@ -1,7 +1,35 @@
 const h2 = document.createElement("h2");
-h2.textContent = "Summary";
+h2.textContent = "Currently Working On...";
+h2.style.fontSize = "14pt"
 // Add h2 to body
 document.querySelector("body").appendChild(h2)
+
+/*const mainMenu = document.createElement("ul")
+mainMenu.style.listStyleType = "none"
+mainMenu.style.margin = "0"
+mainMenu.style.overflow = "hidden"
+mainMenu.style.backgroundColor = "grey"
+
+document.querySelector("body").appendChild(mainMenu)
+
+const menuHome = document.createElement("li")
+const menuSkills = document.createElement("li")
+
+document.querySelector("ul").appendChild(menuHome)
+document.querySelector("ul").appendChild(menuSkills)
+document.querySelector("li").style.float = "left"
+document.querySelector("li").style.margin = "0"
+document.querySelector("li").style.paddingInlineEnd = "10px"
+document.querySelector("li").style.borderRight = "1px black solid"
+
+
+menuHome.className = "menu"
+menuSkills.className = "menu"
+
+menuHome.textContent = "Home"
+menuSkills.textContent = "Skills & Tools"
+menuHome.style.display
+*/
 
 //Clickable LinkedIn Logo
 const logoLi = document.getElementById("linkedin")

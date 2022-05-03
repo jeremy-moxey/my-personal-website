@@ -24,7 +24,21 @@ div#footer {
 }
 #footer img {
     display: inline-block;
-    width: 5%;
+    width: 3%;
     text-align: center;
     padding-left: 10px;
+}
+#main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+}
+#menu-bar li{
+    float:left;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    border-right: 1px solid black;
 }
