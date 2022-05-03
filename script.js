@@ -4,6 +4,20 @@ h2.style.fontSize = "14pt"
 // Add h2 to body
 document.querySelector("body").appendChild(h2)
 
+////////// MENU BAR EVENTS /////////////////////////
+const menuBar = document.querySelectorAll("li")
+for (const item of menuBar) {
+    item.addEventListener('mouseover', function(e) {
+        console.log(e)
+        item.style.backgroundColor = "black"
+    }) 
+    item.addEventListener('mouseout', function(e) {
+        console.log(e)
+        item.style.backgroundColor = "grey"
+    }) 
+}
+
+
 /*const mainMenu = document.createElement("ul")
 mainMenu.style.listStyleType = "none"
 mainMenu.style.margin = "0"
@@ -31,6 +45,7 @@ menuSkills.textContent = "Skills & Tools"
 menuHome.style.display
 */
 
+/////////////////////// LOGO IMAGES AND LINKS//////////////////////////
 //Clickable LinkedIn Logo
 const logoLi = document.getElementById("linkedin")
 function clickAlertLi() {
@@ -61,7 +76,7 @@ logoGh.addEventListener('click', navigateToGitHub)
 const logoAll = document.querySelectorAll(".logo")
 for (const logo of logoAll) {
     logo.addEventListener("mouseover", function(event) {
-        // highlight the mouseover target
+        // log event and change cursor to pointer
         console.log(event)
         logo.style.cursor = "pointer";})
 }
