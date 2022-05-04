@@ -7,11 +7,15 @@
     <body>
         <div id="page-container">
             <h1>Welcome to My Personal Website</h1>
-            <div id="main-menu">
-                <ul id="menu-bar">
-                    <li>Home</li>
-                    <li>Skills & Tools</li>
-                </ul>
+            <div id="main-menu" class="tab">
+                <div id="menu-bar">
+                    <button id="home-button" class="tablinks">Home</button>
+                    <button id="skills-button" class="tablinks">Skills & Tools</button>
+                </div>
+            </div>
+            <div id="content">
+                <div id="home-default" class="tab-content"></div>
+                <div id="skills-content" class="tab-content"></div>
             </div>
             <div id="footer">
               <div class="logo-box">
