@@ -52,52 +52,47 @@ for (const item of tabContent) {
 //Show content if clicked
 const tabLinks = document.getElementsByClassName("tablinks")
 for (const item of tabLinks) {
-    item.addEventListener('click', function () {
-        console.log("click")
-        item.className += " active"
-        console.log("active")
-        showContent()
-        item.className = item.className.replace(" active", "")
+    //item.className = item.className.replace(" active", "")
+    item.addEventListener('click', function (e) {
+        item.style.backgroundColor = ""
+        //item.className = item.className.replace(" active", "")
+        //const other = document.querySelector(".tablinks")
+        //console.log("click")
+        console.log(e)
+        //item.className += " active"
+        //console.log("active")
+        //if (item.className.includes("active") === true) {
+        //    showContent()
+        //}
+        //else {item.style.display = "none"}
+       //item.className = item.className.replace(" active", "")
+
+        if (e.target === document.querySelector("button#skills-button.tablinks")) {
+            let content = document.getElementById("skills-content")
+            content.style.display = "block"
+            let link = document.getElementById("skills-button")
+            console.log(link.className)
+            let other = document.getElementById("home-default")
+            other.style.display = "none"
+            link.style.backgroundColor = "green"
+        }
+        else if (e.target === document.querySelector("button#home-button.tablinks")) {
+            let content = document.getElementById("home-default")
+            content.style.display = "block"
+            let link = document.getElementById("home-button")
+            let other = document.getElementById("skills-content")
+            other.style.display = "none"
+            link.style.backgroundColor = "green"
+
+        }
+        else {let content = document.getElementById("content")
+            content.child.display = "none"
+        }
         
     })
-    //item.children.style.display = "none" //first hide all content
-
-    //item.children.addEventListener('click', function (e) {
-
-    //    console.log(e)
-    //    item.children.style.display = "block"
     }
 
 document.getElementById("home-button").click()
-
-
-
-/*const mainMenu = document.createElement("ul")
-mainMenu.style.listStyleType = "none"
-mainMenu.style.margin = "0"
-mainMenu.style.overflow = "hidden"
-mainMenu.style.backgroundColor = "grey"
-
-document.querySelector("body").appendChild(mainMenu)
-
-const menuHome = document.createElement("li")
-const menuSkills = document.createElement("li")
-
-document.querySelector("ul").appendChild(menuHome)
-document.querySelector("ul").appendChild(menuSkills)
-document.querySelector("li").style.float = "left"
-document.querySelector("li").style.margin = "0"
-document.querySelector("li").style.paddingInlineEnd = "10px"
-document.querySelector("li").style.borderRight = "1px black solid"
-
-
-menuHome.className = "menu"
-menuSkills.className = "menu"
-
-menuHome.textContent = "Home"
-menuSkills.textContent = "Skills & Tools"
-menuHome.style.display
-*/
 
 /////////////////////// LOGO IMAGES AND LINKS//////////////////////////
 //Clickable LinkedIn Logo
