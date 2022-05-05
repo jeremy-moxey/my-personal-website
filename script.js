@@ -52,43 +52,46 @@ for (const item of tabContent) {
 //Show content if clicked
 const tabLinks = document.getElementsByClassName("tablinks")
 for (const item of tabLinks) {
-    //item.className = item.className.replace(" active", "")
+    
     item.addEventListener('click', function (e) {
-        item.style.backgroundColor = ""
-        //item.className = item.className.replace(" active", "")
-        //const other = document.querySelector(".tablinks")
-        //console.log("click")
         console.log(e)
-        //item.className += " active"
-        //console.log("active")
-        //if (item.className.includes("active") === true) {
-        //    showContent()
-        //}
-        //else {item.style.display = "none"}
-       //item.className = item.className.replace(" active", "")
-
+        item.classList.remove("active")
         if (e.target === document.querySelector("button#skills-button.tablinks")) {
+            e.target.classList.add("active")
             let content = document.getElementById("skills-content")
             content.style.display = "block"
             let link = document.getElementById("skills-button")
             console.log(link.className)
             let other = document.getElementById("home-default")
             other.style.display = "none"
-            link.style.backgroundColor = "green"
+            const inactive = document.getElementById("home-button")
+            inactive.classList.remove("active")
+            //link.style.backgroundColor = "green"
+            //link.addEventListener('click', function() {
+            //    link.classList.remove("active")
+            //  })       
         }
         else if (e.target === document.querySelector("button#home-button.tablinks")) {
+            e.target.classList.add("active")
             let content = document.getElementById("home-default")
             content.style.display = "block"
             let link = document.getElementById("home-button")
             let other = document.getElementById("skills-content")
             other.style.display = "none"
-            link.style.backgroundColor = "green"
+            const inactive = document.getElementById("skills-button")
+            inactive.classList.remove("active")
+            //link.style.backgroundColor = "green"
+            //link.addEventListener('click', function() {
+            //    link.classList.remove("active")
+            //  })                  
 
         }
         else {let content = document.getElementById("content")
             content.child.display = "none"
         }
-        
+    //item.addEventListener('click', function() {
+        //item.classList.remove("active")
+        //})
     })
     }
 

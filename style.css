@@ -58,6 +58,6 @@ div#footer {
 
     outline-style:none;*/
 }
-#menubar.active {
+#menu-bar .tablinks.active {
     background-color: green;
 }
