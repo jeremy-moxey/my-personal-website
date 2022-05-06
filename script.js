@@ -42,6 +42,7 @@ const h2Skills = document.createElement("h2");
 h2Skills.textContent = "Skills and Current Tech Stack";
 document.querySelector("#skills-content").appendChild(h2Skills)
 
+//Skills Content
 const h3Skills = document.createElement("h3")
 h3Skills.id = "skills"
 h3Skills.textContent = "Skills"
@@ -57,7 +58,7 @@ liStat.textContent = "Statistical Modelling"
 const liVis = document.createElement("li")
 liVis.textContent = "Visualization"
 
-
+//Languages Content
 const h3Languages = document.createElement("h3")
 h3Languages.id = "languages"
 h3Languages.textContent = "Languages"
@@ -77,7 +78,7 @@ liLook.textContent = "LookML"
 const liGit = document.createElement("li")
 liGit.textContent = "Git"
 
-
+//Tools Content
 const h3Tools = document.createElement("h3")
 h3Tools.id = "tools"
 h3Tools.textContent = "Tools"
@@ -94,7 +95,7 @@ const liTab = document.createElement("li")
 liTab.textContent = "Tableau"
 
 
-
+//Appending in order
 document.querySelector("#skills-content").appendChild(h3Skills)
 document.querySelector("#skills").appendChild(ulSkills)
 document.querySelector("#skillList").appendChild(liAB)
@@ -168,9 +169,9 @@ for (const item of tabLinks) {
             const inactive = document.getElementById("home-button")
             inactive.classList.remove("active")
             const active = document.getElementsByClassName("active")
-            active[0].style.background = "SlateGrey"
+            active[0].style.background = "tomato"
             link.addEventListener('mouseout', function() {
-                active[0].style.backgroundColor = "SlateGrey"
+                active[0].style.backgroundColor = "tomato"
               })
             inactive.style.backgroundColor = "grey"      
         }
@@ -184,9 +185,9 @@ for (const item of tabLinks) {
             const inactive = document.getElementById("skills-button")
             inactive.classList.remove("active")
             const active = document.getElementsByClassName("active")
-            active[0].style.background = "SlateGrey"
+            active[0].style.background = "tomato"
             link.addEventListener('mouseout', function() {          
-                active[0].style.backgroundColor = "SlateGrey"
+                active[0].style.backgroundColor = "tomato"
               })
             inactive.style.backgroundColor = "grey"                
 
@@ -197,7 +198,7 @@ for (const item of tabLinks) {
 
     })
     }
-
+//Home tab by default
 document.getElementById("home-button").click()
 
 /////////////////////// LOGO IMAGES AND LINKS//////////////////////////

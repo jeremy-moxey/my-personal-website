@@ -32,11 +32,6 @@ div#footer {
     overflow: hidden;
     border: 1px solid black;
     background-color: grey;
-/*    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: grey;*/
 }
 #menu-bar button{
     background-color: inherit;
