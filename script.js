@@ -66,10 +66,12 @@ for (const item of tabLinks) {
             other.style.display = "none"
             const inactive = document.getElementById("home-button")
             inactive.classList.remove("active")
-            //link.style.backgroundColor = "green"
-            //link.addEventListener('click', function() {
-            //    link.classList.remove("active")
-            //  })       
+            const active = document.getElementsByClassName("active")
+            active[0].style.background = "green"
+            link.addEventListener('mouseout', function() {
+                active[0].style.backgroundColor = "green"
+              })
+            inactive.style.backgroundColor = "grey"      
         }
         else if (e.target === document.querySelector("button#home-button.tablinks")) {
             e.target.classList.add("active")
@@ -80,10 +82,12 @@ for (const item of tabLinks) {
             other.style.display = "none"
             const inactive = document.getElementById("skills-button")
             inactive.classList.remove("active")
-            //link.style.backgroundColor = "green"
-            //link.addEventListener('click', function() {
-            //    link.classList.remove("active")
-            //  })                  
+            const active = document.getElementsByClassName("active")
+            active[0].style.background = "green"
+            link.addEventListener('mouseout', function() {          
+                active[0].style.backgroundColor = "green"
+              })
+            inactive.style.backgroundColor = "grey"                
 
         }
         else {let content = document.getElementById("content")
